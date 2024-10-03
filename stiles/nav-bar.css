@@ -4,7 +4,7 @@ padding: 0;
 box-sizing: border-box;
 }
 .fondo{
-    background-image: url(/imagenes/landscape2.png);
+    background-image: url(../imagenes/landscape2.png);
 }
 header{
     position: sticky;
