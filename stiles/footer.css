@@ -1,2 +1,33 @@
 footer{
+    position: relative; 
+    padding: 20px; 
+    background-color: rgba(60, 166, 33, 0.6);
+    color: white; /* Color del texto */
+    text-align: center; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+footer::before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-image: url('../imagenes/landscape.png');
+    background-size: cover; 
+    background-position: center;
+    opacity: 0.8; 
+    z-index: -1; 
+}
+
+footer > div {
+    position: relative; /* Permite que el contenido esté encima del pseudo-elemento */
+    z-index: 2; /* Asegura que el contenido sea visible */
+}
+.contacto, .redes, .paginas {
+    display: flex;
+    flex-direction: column;
 }

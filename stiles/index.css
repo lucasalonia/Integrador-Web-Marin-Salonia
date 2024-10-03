@@ -15,13 +15,18 @@ div.presentacion__servicios{
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow:10px 10px 10px 5px  rgba(0, 0, 0, 0.9);
+    box-shadow:0px 0px 40px 5px  rgba(0, 0, 0, 0.9);
     border-radius: 10px;
-    height: 500px;
-    width: 1000px;
+    height: 520px;
+    width: 1200px;
     top:200px;
     left: 400px;
+    padding: 20px;
+    transition: .5s all;
     
+}
+div.presentacion__servicios:hover{
+    box-shadow:0px 0px 10px 5px  rgba(0, 0, 0, 0.9);
 }
 div.presentacion__servicios__sub{
     display: flex;
@@ -36,7 +41,7 @@ h1.presentacion__servicios__sub--h1{
 }
 p.presentacion__servicios__sub--p{
     color: rgb(173, 179, 184);
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
 }
 hr.divisor {
@@ -62,24 +67,26 @@ section.destacados{
     margin-top: 20px;
 }
 div.destacados__contenedor{
-    border-radius: 10px;
     width: 50%;
     position: relative;
     height: 500px;
+    background-color: black;
+    border-radius: 20px;
 
 }
 div.destacados__contenedor--boton{
+    z-index: 1;
     font-size: 30px;
     width: 70px;
     height: 70px;
     line-height: 70px;
     border-radius: 50%;
-    background-color: regb(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.7);
     text-align: center;
-    font-weight: bold;
+    font-weight: 900;
     position: absolute;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+    color:  #fff;
+    box-shadow: 0 0 10px rgba(2, 2, 2, 0.6);
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
@@ -92,6 +99,7 @@ img.destacados__contenedor--img{
     border-radius: 20px;
     width: 100%;
     height: 100%;
+    opacity: 0.9;
 
 }
 .adelante{
