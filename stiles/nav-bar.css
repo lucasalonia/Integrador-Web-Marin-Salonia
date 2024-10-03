@@ -3,30 +3,37 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-
+.fondo{
+    background-image: url(/imagenes/landscape2.png);
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
 nav.navbar{
     display: flex;
     gap: 100px;
     justify-content: center;
-    position: sticky;
-    background-color: aqua;
+     background-color: rgba(57, 54, 54, 0.5);
 
 }
-img.navbar-img{
+img.navbar--img{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 250px;
     height: 100px;
+    
    
 }
-h1.navbar_h1{
+h1.navbar__h1{
     padding-top: 30px;
     font-size: 35px;
 }
-a.navbar_h1-link{
+a.navbar__h1--link{
     color: black;
     text-decoration: none;
 }
-a.navbar_h1-link:visited{
+a.navbar__h1--link:visited{
     color: blue;
 }
