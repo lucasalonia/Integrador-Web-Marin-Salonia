@@ -1,4 +1,5 @@
 footer{
+    margin-top: 20px;
     position: relative; 
     padding: 20px; 
     background-color: rgba(60, 166, 33, 0.6);
@@ -7,7 +8,8 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    justify-content: space-evenly;
+    font-size: 20px;
 }
 footer::before {
     content: ''; 
@@ -30,4 +32,21 @@ footer > div {
 .contacto, .redes, .paginas {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.paginas{
+    gap: 20px;
+}
+.contacto{
+    gap: 20px;
+}
+.redes div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.redes img{
+    width: 40px;
 }
