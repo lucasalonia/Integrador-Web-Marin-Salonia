@@ -1,3 +1,4 @@
+
 /*PORTADA INICIO*/
 .portada{
     background-image: url("/imagenes/contac.jpg");
@@ -26,3 +27,99 @@
     background-color: rgba(57, 54, 54, 0.5);
 }
 /*FIN PORTADA*/
+
+/*CONTACTO FORMULARIO*/
+.formulario{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    background-color: aliceblue;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 25px;
+    
+}
+input{
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+}
+div{
+    display: flex;
+    flex-direction: column; 
+
+
+}
+.grupo label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px
+}
+.radio{
+    width: 100px;
+}
+.correccion{
+    padding: 5px;
+    font-size: 20px;
+    height: 100px;
+}
+button{
+    height: 50px;
+    align-self: center;
+    width: 100px;
+}
+/*FIN CONTACTO FORMULARIO*/
+
+/* CONFIRMACION */
+.confirmar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(57, 54, 54, 1);
+    top: 50%;
+    left: 38%;
+    padding: 10px;
+
+}
+.confirmar h2{
+    color: rgb(196, 34, 34);
+    text-align: center;
+}
+.boton{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 30px;
+    justify-content: center;
+}
+.boton button{
+    height: 30px;
+}
+.confirmar p{
+    color: aliceblue;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: bolder;
+}
+/* FIN CONFIRMACION */
+
+/* CARTEL */
+.resultado{
+    position: absolute;
+    top: 30%;
+    left: 37%;
+    background-color: rgba(57, 54, 54, 0.8);
+    color:azure;
+    padding: 10px;
+    border-radius: 10px;
+}

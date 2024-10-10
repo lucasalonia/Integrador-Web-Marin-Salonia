@@ -29,51 +29,91 @@
     <main>
         <section class="formulario">
 
-            <form action="">
+            <form action="" autocomplete="off" novalidate onsubmit="return validar()">
                 <label for="nombre">
                     Nombre:
                 </label>
-                <input type="text" name="" id="nombre">
+                <input type="text" name="" id="nombre" onfocus= "limpiar(event)">
+                <span style="display: none;" id="errorNombre" >*Se debe colocar un nombre</span>
+
+
                 <br>
+
                 <label for="apellido">
                     Apellido:
                 </label>
-                <input type="text" name="apellido" id="apellido">
+                <input type="text" name="apellido" id="apellido" onfocus= "limpiar(event)">
+                <span style="display: none;" id="errorApellido" >*Se debe colocar un apellido</span>
                 <br>
+
                 <label for="telefono">
                     Telefono:
                 </label>
-                <input type="number" name="telefono" id="telefono">
-                <br>
-                <label for="opinio">
-                    ¿Que le parecio la pagina?
-                </label>
-                <br>
-                <label for="buena">
-                    <input type="radio" name="opinio" id="buena" value="buena">
-                    Buena
-                </label>
-                <label for="estandar">
-                    <input type="radio" name="opinion" id="estandar" value="estandar">
-                    Estandar
-                </label>
-                <label for="mala">
-                    <input type="radio" name="opinion" id="mala" value="mala">
-                    Mala
-                </label>
+                <input type="number" name="telefono" id="telefono" onfocus= "limpiar(event)">
+                <span style="display: none;" id="errorTelefono" >*Numero invalido</span>
+
                 <br>
 
-                <label for="correcion">
+                <label for="mail">
+                    E-mail:
+                </label>
+                <input type="email" name="mail" id="mail" onfocus= "limpiar(event)">
+                <span style="display: none;" id="errorMail" >*e-mail invalido</span>
+
+                <br>
+            <div class="grupo">
+                <label for="opinion">
+                    ¿Que le parecio la pagina?
+                </label>
+
+                <br>
+
+                <label for="buena">
+                    <input class="radio" type="radio" name="opinion" id="buena" value="buena">
+                    Buena
+                </label>
+
+                <label for="estandar">
+                    <input class="radio" type="radio" name="opinion" id="estandar" value="estandar">
+                    Estandar
+                </label>
+
+                <label for="mala">
+                    <input class="radio" type="radio" name="opinion" id="mala" value="mala">
+                    Mala
+                </label>
+
+            </div>
+            
+                <br>
+
+                <label for="correccion">
                     ¿Que correciones realizaria?
                 </label>
 
                 <br>
 
-                <input type="text" name="correcion" id="correcion">
+                <textarea class="correccion" name="correccion" id="correccion"></textarea>
                 <br>
-                <button type="button">Enviar</button>
+                <button >Enviar</button>
             </form>
         </section>
+
+        <!-- MOSTRAR RESULTADO -->
+         <div style="display: none;" id="confirm" class="confirmar" >
+            <br>
+            <h2>¿Desea enviar esta respuesta?</h2>
+            <div class="respuesta">
+                
+            </div>
+            <div class="boton">
+                <button  onclick="spawn()" id="si">Si</button>
+                <button onclick="elimniar()" id="no">No</button>
+            </div>
+         </div>
+        <div style="display: none;" id="result" class="resultado">
+            <h1>¡Gracias por ayudarnos a mejorar!</h1>
+        </div>
     </main>
 
 
