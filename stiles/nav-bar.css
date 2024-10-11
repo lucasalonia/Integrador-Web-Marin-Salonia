@@ -31,9 +31,14 @@ h1.navbar__h1{
     font-size: 35px;
 }
 a.navbar__h1--link{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: all .3s;
 }
 a.navbar__h1--link:visited{
-    color: blue;
+    color: rgb(255, 255, 255);
+}
+a.navbar__h1--link:hover{
+    text-shadow:  1px 1px 2px rgb(218, 221, 141), 0 0 1em rgb(231, 214, 91), 0 0 0.2em rgb(218, 221, 141);
+    font-size: 36px;
 }

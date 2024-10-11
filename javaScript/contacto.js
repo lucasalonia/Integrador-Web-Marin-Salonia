@@ -78,6 +78,9 @@ function spawn(){
     confirmar.style.display = 'none';
     let result=document.getElementById('result');
     result.style.display = 'block';
+    setTimeout(() => {
+        result.style.display = 'none';
+    }, 4000);
 
 }
 function elimniar(){
