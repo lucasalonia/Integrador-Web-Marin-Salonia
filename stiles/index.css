@@ -13,7 +13,6 @@ section.presentacion{
 }
 div.presentacion__servicios{
     position: absolute;
-    right: 800px;
     display: flex;
     flex-direction: row;
     background-color: rgba(0, 0, 0, 0.5);
@@ -22,7 +21,7 @@ div.presentacion__servicios{
     height: 520px;
     width: 1200px;
     top:200px;
-    left: 400px;
+    left: 20%;
     padding: 20px;
     transition: .5s all;
     

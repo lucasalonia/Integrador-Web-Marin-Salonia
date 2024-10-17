@@ -54,6 +54,7 @@ function validar(){
         confirmar.insertBefore(texto, confirmar.firstChild);
         texto.appendChild(reseña);
         confirmar.style.display = 'block';
+        confirmar.style.boxShadow ='0px 0px 40px 5px  rgba(0, 0, 0, 0.9)';
         nombre.value = '';
         apellido.value='';
         mail.value='';
@@ -62,11 +63,16 @@ function validar(){
         setTimeout(() => {
             confirmar.removeChild(texto);
             confirmar.removeChild(reseña);
-        }, 4000);
+        }, 10000);
+        const form = document.getElementById('form');
+        form.style.backgroundColor= 'rgba(0, 0, 0, 0.3)';
+       
 }
+
 
     return false;
 }
+
 
 function limpiar(event){
 
@@ -75,15 +81,19 @@ function limpiar(event){
 }
 
 function spawn(){
+    const form = document.getElementById('form');
+    form.style.backgroundColor= 'white';
     confirmar.style.display = 'none';
     let result=document.getElementById('result');
     result.style.display = 'block';
-    setTimeout(() => {
-        result.style.display = 'none';
-    }, 4000);
+    let main = document.getElementById('main');
+    main.style.backgroundColor= 'gba(0, 0, 0, 0.3)';
+
 
 }
 function elimniar(){
     confirmar.style.display = 'none';
+    const form = document.getElementById('form');
+    form.style.backgroundColor= 'white';
     
 }
