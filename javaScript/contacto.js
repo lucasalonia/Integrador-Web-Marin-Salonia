@@ -63,7 +63,7 @@ function validar(){
         setTimeout(() => {
             confirmar.removeChild(texto);
             confirmar.removeChild(reseña);
-        }, 10000);
+        }, 7000);
         const form = document.getElementById('form');
         form.style.backgroundColor= 'rgba(0, 0, 0, 0.3)';
        

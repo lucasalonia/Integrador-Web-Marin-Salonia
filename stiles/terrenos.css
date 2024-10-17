@@ -1,3 +1,7 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /*PORTADA INICIO*/
 .portada{
     background-image: url("../imagenes/landlost2.jpg");
@@ -42,6 +46,29 @@
     
 }
 /* FIN PAGINAS */
+
+
+/* Estilos para filtro*/
+.formulario-operacion {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+select {
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* FIN FILTRO */
+
 
 /*PLANTILLAS*/
 .plantilla{

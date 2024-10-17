@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+   
+
 }
 
 /*INICIO SECCION PRESENTACION*/
+body{
+    background-color: #f4f4f4;
+
+}
 section.presentacion{
     background-color: rgba(0, 0, 0, 0.2);
     height: 820px;
@@ -21,7 +28,7 @@ div.presentacion__servicios{
     height: 520px;
     width: 1200px;
     top:200px;
-    left: 20%;
+    left: 15%;
     padding: 20px;
     transition: .5s all;
     
@@ -54,19 +61,19 @@ hr.divisor {
 
   /* RESPONSIVE PRESENTACION */
   @media (max-width: 1536px){
-    div.presentacion__servicios{
-        width: 900px;
-    left: 20%;
-    height: 450px;
-       padding: 0px;
-    }
-    h1.presentacion__servicios__sub--h1{
-        font-size: 35px;
-    }
-    p.presentacion__servicios__sub--p{
-        font-size: 30px;
-        padding: 5px;
-    }
+        div.presentacion__servicios{
+            width: 900px;
+        left: 20%;
+        height: 450px;
+        padding: 0px;
+        }
+        h1.presentacion__servicios__sub--h1{
+            font-size: 35px;
+        }
+        p.presentacion__servicios__sub--p{
+            font-size: 30px;
+            padding: 5px;
+        }
   }
   @media (max-width: 1366px){
     div.presentacion__servicios{
@@ -93,9 +100,10 @@ hr.divisor {
 section.destacados{
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
     margin-top: 20px;
     gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 div.destacados__contenedor{
     flex: 1;
@@ -104,6 +112,7 @@ div.destacados__contenedor{
     height: 500px;
     background-color: black;
     border-radius: 20px;
+    height: 600px;
 
 }
 div.destacados__contenedor--boton{
@@ -145,6 +154,7 @@ img.destacados__contenedor--img{
 
 }
 div.destacados__titulo{
+    padding: 20px;
     background-color: rgba(0,0,0,0.1);
     padding-left: 10px;
     padding-right: 10px;
@@ -168,6 +178,36 @@ div.destacados__titulo h2{
     font-size: 30px;
 }
 /* RESPONSIVE DESTACADOS */
+
+@media (max-width: 1536px){
+    section.destacados{
+        padding: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    div.destacados__contenedor{
+        flex-grow: 2;
+        flex-basis: 0%;
+        height:600px;
+   }
+   div.destacados__titulo{
+        padding: 20px;
+   }
+   div.destacados__titulo p{
+    font-size: 20px;
+    }
+    div.destacados__titulo ul{
+        font-size: 20px;
+        list-style-type: none;
+    }
+    div.destacados__titulo h1{
+        font-size: 25px;
+    }
+    div.destacados__titulo h2{
+        font-size: 25px;
+    }
+
+}
 @media (max-width: 1366px){
     section.destacados{
         padding: 0px;
