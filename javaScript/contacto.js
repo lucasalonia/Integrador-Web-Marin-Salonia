@@ -45,7 +45,6 @@ function validar(){
 
 
     //Respuesta
-
     if(!errorFlag){
         let texto = document.createElement('p');
         let reseña = document.createElement('p');
@@ -78,6 +77,8 @@ function limpiar(event){
 
     let limpiarSpan = event.target.nextElementSibling;
     limpiarSpan.style.display = 'none';
+    let result=document.getElementById('result');
+    result.style.display = 'none';
 }
 
 function spawn(){
