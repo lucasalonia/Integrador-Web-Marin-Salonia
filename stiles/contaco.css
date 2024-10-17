@@ -9,7 +9,7 @@
 .portada__titulo{
     background-color: rgba(0, 0, 0, 0.3);
     height: auto;
-    height: 66%;
+    height: 67%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +32,23 @@
         background-position: center -0%;
     }
 }
+
+/* PAGINAS */
+.pagina{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    gap: 10px;
+    width: 100%;
+    background-color: rgba(57, 54, 54, 0.5);
+}
+.pagina a{
+    color: aliceblue;
+    
+    
+}
+/* FIN PAGINAS */
 
 
 /*CONTACTO FORMULARIO*/

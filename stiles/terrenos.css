@@ -27,7 +27,21 @@
 }
 /*FIN PORTADA*/
 
-
+/* PAGINAS */
+.pagina{
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    gap: 10px;
+    width: 100%;
+    background-color: rgba(57, 54, 54, 0.5);
+}
+.pagina a{
+    color: aliceblue;
+    
+    
+}
+/* FIN PAGINAS */
 
 /*PLANTILLAS*/
 .plantilla{
