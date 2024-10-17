@@ -3,7 +3,7 @@
 .portada{
     background-image: url("../imagenes/contac.jpg");
     background-size: cover;
-    background-position: center -100%;
+    background-position: center 15%;
     height: 300px;
 }
 .portada__titulo{
@@ -27,6 +27,12 @@
     background-color: rgba(57, 54, 54, 0.5);
 }
 /*FIN PORTADA*/
+@media (max-width: 1366px){
+    .portada{
+        background-position: center -0%;
+    }
+}
+
 
 /*CONTACTO FORMULARIO*/
 .formulario{

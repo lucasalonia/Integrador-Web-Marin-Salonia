@@ -58,6 +58,8 @@ hr.divisor {
     div.presentacion__servicios{
        width: 800px;
        left: 300px;
+       height: 450px;
+       padding: 0px;
        
     }
     h1.presentacion__servicios__sub--h1{
@@ -65,6 +67,7 @@ hr.divisor {
     }
     p.presentacion__servicios__sub--p{
         font-size: 30px;
+        padding: 5px;
     }
   }
   /* FIN RESPONSIVE PRESENTACION */
@@ -149,5 +152,34 @@ div.destacados__titulo h1{
 }
 div.destacados__titulo h2{
     font-size: 30px;
+}
+/* RESPONSIVE DESTACADOS */
+@media (max-width: 1366px){
+    section.destacados{
+        padding: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    div.destacados__contenedor{
+        flex-grow: 2;
+        flex-basis: 0%;
+        height:600px;
+   }
+   div.destacados__titulo{
+        padding: 20px;
+   }
+   div.destacados__titulo p{
+    font-size: 20px;
+    }
+    div.destacados__titulo ul{
+        font-size: 20px;
+        list-style-type: none;
+    }
+    div.destacados__titulo h1{
+        font-size: 25px;
+    }
+    div.destacados__titulo h2{
+        font-size: 25px;
+    }
 }
 
