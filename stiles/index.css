@@ -53,6 +53,21 @@ hr.divisor {
   }
 
   /* RESPONSIVE PRESENTACION */
+  @media (max-width: 1536px){
+    div.presentacion__servicios{
+        width: 900px;
+    left: 20%;
+    height: 450px;
+       padding: 0px;
+    }
+    h1.presentacion__servicios__sub--h1{
+        font-size: 35px;
+    }
+    p.presentacion__servicios__sub--p{
+        font-size: 30px;
+        padding: 5px;
+    }
+  }
   @media (max-width: 1366px){
     div.presentacion__servicios{
        width: 800px;
