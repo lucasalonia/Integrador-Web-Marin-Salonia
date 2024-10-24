@@ -25,7 +25,7 @@ div.presentacion__servicios{
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow:0px 0px 40px 5px  rgba(0, 0, 0, 0.9);
     border-radius: 10px;
-    height: 520px;
+    /* height: 520px; */
     width: 1200px;
     top:200px;
     left: 15%;
@@ -62,9 +62,9 @@ hr.divisor {
   /* RESPONSIVE PRESENTACION */
   @media (max-width: 1536px){
         div.presentacion__servicios{
-            width: 900px;
+        width: 900px;
         left: 20%;
-        height: 450px;
+        /* height: 450px; */
         padding: 0px;
         }
         h1.presentacion__servicios__sub--h1{
@@ -79,7 +79,7 @@ hr.divisor {
     div.presentacion__servicios{
        width: 800px;
        left: 300px;
-       height: 450px;
+       /* height: auto; */
        padding: 0px;
        
     }
