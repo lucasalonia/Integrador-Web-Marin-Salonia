@@ -43,7 +43,6 @@
                 <input type="text" name="" id="nombre" onfocus= "limpiar(event)">
                 <span style="display: none;" id="errorNombre" >*Se debe colocar un nombre</span>
 
-
                 <br>
 
                 <label for="apellido">
@@ -102,8 +101,12 @@
 
                 <textarea class="correccion" name="correccion" id="correccion"></textarea>
                 <br>
+                
+                <form id="contactoForm" action="" autocomplete="off" novalidate onsubmit="return validar()">
+                   
                 <button onclick="opacar()" >Enviar</button>
             </form>
+            
         </section>
         </div>
 
@@ -111,19 +114,26 @@
          <div style="display: none;" id="confirm" class="confirmar" >
             <br>
             <h2>¿Desea enviar esta respuesta?</h2>
-            <div class="respuesta">
-                
+            <div class="respuesta">              
             </div>
             <div class="boton">
                 <button  onclick="spawn()" id="si">Si</button>
-                <button onclick="elimniar()" id="no">No</button>
+                <button onclick="eliminar()" id="no">No</button>
             </div>
          </div>
+         
+         <div class="data-container" id="dataContainer"> 
+            <h2>Datos Ingresados:</h2> 
+            <p id="datosIngresados"></p> 
+        </div>
+         
         <div style="display: none;" id="result" class="resultado">
             <h1>¡Gracias por ayudarnos a mejorar!</h1>
         </div>
-    </main>
 
+        
+
+    </main>
 
     <footer>
         <div class="contacto">

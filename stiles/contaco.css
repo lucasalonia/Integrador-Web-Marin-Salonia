@@ -159,6 +159,18 @@ span{
     text-align: justify;
     font-weight: bolder;
 }
+.data-container {
+    background-color:  yellowgreen;
+    color: rgb(9, 0, 0);
+    padding: 10px; 
+    border-radius: 5px;
+    display: none;
+    width: 360px; 
+    font-size: 0.9em; 
+    margin: 10px auto; 
+    box-sizing: border-box; 
+} 
+
 /* FIN CONFIRMACION */
 
 /* CARTEL */
@@ -166,7 +178,7 @@ span{
     position: absolute;
     top: 31%;
     left: 37%;
-    background-color: rgba(57, 54, 54, 0.8);
+    background-color: rgba(57, 54, 54, 1);
     color:azure;
     padding: 10px;
     border-radius: 10px;
