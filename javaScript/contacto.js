@@ -90,3 +90,9 @@ function spawn() {
 function eliminar() {
     confirmar.style.display = 'none';
 }
+function limpiar(event){
+
+    let limpiarSpan = event.target.nextElementSibling;
+    limpiarSpan.style.display = 'none';
+
+}
